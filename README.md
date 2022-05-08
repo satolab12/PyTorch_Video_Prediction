@@ -5,6 +5,12 @@
 main.pyを実行すれば学習と検証をします。config.pyにて各種パラメータとデータセットの指定をします。データセットは動画形式ではなくフレーム画像に変換してください。（Dataloaderの仕様上）
 dataset.pyで変換できます。モデルを変えて実行したい場合はmain.pyのモデル定義部を変更してください。
 
+Various models for video prediction tasks are implemented in PyTorch. 
+Run main.py to train and validate the models, and config.py to specify parameters and datasets. 
+The dataset should be converted to frame images, not video format (due to Dataloader specifications).  
+You can use dataset.py to convert them. If you want to run with different models,
+change the model definition part of main.py.
+
 ## Model
 ### CNN+GRU
 ![図形 (3)](https://user-images.githubusercontent.com/56526560/167286624-91a052a0-f10e-4725-aa95-5efe909ce82e.jpg)
